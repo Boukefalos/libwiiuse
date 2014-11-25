@@ -48,11 +48,12 @@
 #	ifdef __cplusplus
 extern "C" {
 #	endif
-	WINHIDSDI BOOL WINAPI HidD_SetOutputReport(HANDLE, PVOID, ULONG);
+	WIIUSE_EXPORT BOOL WINAPI HidD_SetOutputReport(HANDLE, PVOID, ULONG);
 #	ifdef __cplusplus
 }
 #	endif
 #endif
+
 
 int wiiuse_os_find(struct wiimote_t** wm, int max_wiimotes, int timeout) {
 	GUID device_id;
